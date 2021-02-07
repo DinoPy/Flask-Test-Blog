@@ -13,7 +13,7 @@ from functools import wraps
 from flask import abort
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = 'blablasecret12313123'
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
@@ -232,4 +232,4 @@ def delete_post(post_id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
